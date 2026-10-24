@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A. Priyadharshini | Data Analyst Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0B0F19;--card:rgba(15,23,42,.6);--txt:#e2e8f0;--mut:#94a3b8;--cy:#22d3ee;--in:#818cf8;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background-image:radial-gradient(60rem 30rem at 85% -5%,rgba(99,102,241,.22),transparent),radial-gradient(45rem 28rem at -5% 25%,rgba(34,211,238,.14),transparent);background-attachment:fixed}
+.card{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid #1e293b;border-radius:1.5rem;padding:1.5rem;transition:transform .3s,box-shadow .3s,border-color .3s}
+.card:hover{transform:scale(1.02);border-color:rgba(34,211,238,.5);box-shadow:0 0 30px -8px rgba(34,211,238,.45)}
+.grad{background:linear-gradient(90deg,var(--cy),var(--in));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.2rem;border-radius:999px;font-weight:600;font-size:.9rem;transition:.25s}
+.btn-p{background:linear-gradient(90deg,var(--cy),var(--in));color:#0B0F19;box-shadow:0 0 20px rgba(34,211,238,.35)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 0 30px rgba(129,140,248,.6)}
+.btn-g{border:1px solid #334155;color:var(--txt)}.btn-g:hover{border-color:var(--cy);color:var(--cy)}
+.bar{height:6px;border-radius:99px;background:#1e293b;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--cy),var(--in));transition:width 1.4s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 10px var(--cy)}
+.tag{font-size:.72rem;padding:.2rem .6rem;border-radius:99px;border:1px solid rgba(129,140,248,.4);color:#c7d2fe;background:rgba(99,102,241,.1)}
+.lbl{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cy);font-weight:700}
+input,textarea{width:100%;background:rgba(2,6,23,.6);border:1px solid #334155;border-radius:.9rem;padding:.7rem .9rem;color:var(--txt);outline:none}
+input:focus,textarea:focus{border-color:var(--cy);box-shadow:0 0 0 3px rgba(34,211,238,.15)}
+input[type=range]{padding:0;accent-color:#22d3ee}
+.fade{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.fade.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.fade{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="sticky top-0 z-50 border-b border-slate-800/80" style="background:rgba(11,15,25,.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:env(safe-area-inset-top,0px)">
+ <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="#top" class="font-bold text-lg"><span class="grad">Priyadharshini</span><span class="text-slate-400">.analytics</span></a>
+  <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+   <a class="hover:text-cyan-400" href="#about">About</a><a class="hover:text-cyan-400" href="#experience">Experience</a><a class="hover:text-cyan-400" href="#projects">Projects</a><a class="hover:text-cyan-400" href="#certs">Certifications</a><a class="hover:text-cyan-400" href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-p" href="mailto:priya2006ac@gmail.com?subject=Resume%20request%20-%20A.%20Priyadharshini">⬇ Download Resume</a>
+ </div>
+</header>
+
+<main id="top" class="max-w-6xl mx-auto px-4 py-10 space-y-24">
+
+<!-- HERO -->
+<section class="grid grid-cols-1 md:grid-cols-6 gap-4 fade">
+ <div class="card md:col-span-4 md:row-span-2 flex flex-col justify-center py-10">
+  <span class="lbl">● Open to data analyst roles</span>
+  <h1 class="text-4xl sm:text-6xl font-extrabold mt-3 leading-tight">A. Priyadharshini</h1>
+  <p class="text-xl sm:text-2xl mt-2 font-semibold grad">Turning complex data into actionable business intelligence.</p>
+  <p class="text-slate-400 mt-4">Data Analytics Specialist | B.Tech Information Technology (Anna University)</p>
+  <p class="text-slate-500 text-sm mt-1">📍 Tiruchirappalli, Tamil Nadu, India</p>
+  <div class="flex flex-wrap gap-3 mt-6">
+   <a href="#projects" class="btn btn-p">View Projects →</a>
+   <a href="#contact" class="btn btn-g">Let’s talk</a>
+  </div>
+ </div>
+ <div class="card md:col-span-2"><div class="text-3xl">🏆</div><div class="font-bold mt-2">Department Topper</div><div class="text-sm text-slate-400">Anna University, B.Tech IT</div></div>
+ <div class="card md:col-span-2"><div class="text-3xl">📊</div><div class="font-bold mt-2">Google Certified</div><div class="text-sm text-slate-400">Data Analytics certificate</div></div>
+ <div class="card md:col-span-3"><div class="text-3xl">💼</div><div class="font-bold mt-2">Ex-Data Analytics Intern</div><div class="text-sm text-slate-400">Prompt Infotech · Jun–Jul 2026</div></div>
+ <div class="card md:col-span-3"><div class="text-3xl">⚡</div><div class="font-bold mt-2">SQL · Python · Tableau · Power BI</div><div class="text-sm text-slate-400">Plus Excel, Flask &amp; Chart.js</div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade">
+ <h2 class="text-3xl font-bold mb-6">About &amp; <span class="grad">Technical Skills</span></h2>
+ <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+  <div class="card md:col-span-3 md:row-span-2">
+   <span class="lbl">Skill matrix</span>
+   <div id="skills" class="mt-4 space-y-4"></div>
+  </div>
+  <div class="card md:col-span-3">
+   <span class="lbl">Core focus areas</span>
+   <div class="grid grid-cols-2 gap-3 mt-4 text-sm">
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800">🧹 Data Clearance</div>
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800">💹 Profit &amp; Loss Analysis</div>
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800">🎯 KPI Tracking</div>
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800">🗄️ Database Structuring</div>
+   </div>
+  </div>
+  <div class="card md:col-span-3">
+   <span class="lbl">Education</span>
+   <h3 class="text-xl font-bold mt-3">B.Tech Information Technology</h3>
+   <p class="text-slate-400 text-sm">Anna University · Score 8.42</p>
+   <span class="inline-block mt-3 tag">🏅 Department Topper · Top 10 in class</span>
+   <p class="text-slate-500 text-xs mt-3">Class XII: 75% (2023) · Class X: 80% (2021) · Tamil Nadu Board</p>
+  </div>
+ </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="fade">
+ <h2 class="text-3xl font-bold mb-6">Work <span class="grad">Experience</span></h2>
+ <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+  <div class="card md:col-span-4">
+   <div class="flex flex-wrap justify-between gap-2">
+    <div><h3 class="text-xl font-bold">Data Analytics Intern</h3><p class="text-cyan-400 text-sm">Prompt Infotech</p></div>
+    <span class="tag self-start">June 2026 – July 2026</span>
+   </div>
+   <ul class="mt-4 space-y-3 text-slate-300 text-sm list-disc pl-5">
+    <li><b>Business insight generation:</b> worked with Tableau, Power BI, SQL, Python and Excel to find profit and loss patterns across year, month and week.</li>
+    <li><b>SQL database architecture:</b> learned to build structured databases from user data to support reliable reporting.</li>
+    <li><b>Data visualization &amp; clearance:</b> cleaned raw data and turned it into clear visuals for decision-makers across industries.</li>
+   </ul>
+  </div>
+  <div class="card md:col-span-2 flex flex-col justify-center text-center">
+   <div class="text-5xl font-extrabold grad">5</div><div class="text-slate-400 text-sm mt-1">analytics tools used hands-on</div>
+   <div class="mt-4 flex flex-wrap justify-center gap-2"><span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Excel</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade">
+ <h2 class="text-3xl font-bold mb-6">Featured <span class="grad">Projects</span></h2>
+ <div class="grid grid-cols-1 lg:grid-cols-6 gap-4">
+  <div class="card lg:col-span-4">
+   <span class="lbl">Project 01 · 2026</span>
+   <h3 class="text-2xl font-bold mt-2">ShopInsight – E-Commerce Data Analytics Dashboard</h3>
+   <div class="flex flex-wrap gap-2 mt-3"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">Chart.js</span></div>
+   <p class="text-slate-400 text-sm mt-3">Web-based dashboard analysing sales, profit, orders and customer data through KPIs, with monthly trends, category and region views, and Python forecasting.</p>
+   <div class="grid grid-cols-3 gap-3 mt-4 text-center">
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800"><div class="text-xs text-slate-500">Revenue</div><div id="k1" class="font-bold text-cyan-300">—</div></div>
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800"><div class="text-xs text-slate-500">Orders</div><div id="k2" class="font-bold text-indigo-300">—</div></div>
+    <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800"><div class="text-xs text-slate-500">Profit margin</div><div id="k3" class="font-bold text-cyan-300">—</div></div>
+   </div>
+   <div class="mt-4 h-56"><canvas id="salesChart"></canvas></div>
+   <div class="mt-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+    <div class="flex justify-between text-sm"><span class="font-semibold">🔮 Sales forecast widget</span><span>Growth: <b id="gv" class="text-cyan-300">8%</b>/mo</span></div>
+    <input id="g" type="range" min="-5" max="20" value="8" class="mt-2" aria-label="Monthly growth rate">
+    <p class="text-xs text-slate-500 mt-2">Drag to project the next 3 months. Demo with sample data.</p>
+   </div>
+  </div>
+  <div class="card lg:col-span-2">
+   <span class="lbl">Project 02 · Jul 2026</span>
+   <h3 class="text-2xl font-bold mt-2">Sales Performance Dashboard</h3>
+   <div class="flex flex-wrap gap-2 mt-3"><span class="tag">Tableau</span><span class="tag">SQL</span><span class="tag">Excel</span></div>
+   <p class="text-slate-400 text-sm mt-3">Tableau dashboard that turns raw transactional data into business intelligence to track revenue targets, refine product strategy and gauge regional market health.</p>
+   <div class="mt-5 space-y-3 text-sm">
+    <div><div class="flex justify-between"><span>Revenue vs target</span><span class="text-cyan-300">92%</span></div><div class="bar"><i data-w="92"></i></div></div>
+    <div><div class="flex justify-between"><span>Regional market health</span><span class="text-cyan-300">78%</span></div><div class="bar"><i data-w="78"></i></div></div>
+    <div><div class="flex justify-between"><span>Product strategy mix</span><span class="text-cyan-300">85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+   </div>
+   <p class="text-xs text-slate-500 mt-4">Illustrative figures.</p>
+   <a href="https://github.com/priya2006ac-cloud/skill-project" target="_blank" rel="noopener" class="btn btn-g mt-4">View on GitHub ↗</a>
+  </div>
+ </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs" class="fade">
+ <h2 class="text-3xl font-bold mb-6">Certifications &amp; <span class="grad">Honors</span></h2>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="card"><div class="text-3xl">🎓</div><h3 class="font-bold mt-2">Google Data Analytics</h3><p class="text-sm text-slate-400">Professional Certificate</p></div>
+  <div class="card"><div class="text-3xl">🐍</div><h3 class="font-bold mt-2">Python for Machine Learning &amp; Training</h3><p class="text-sm text-slate-400">Certification</p></div>
+  <div class="card" style="box-shadow:0 0 30px -10px rgba(129,140,248,.6)"><div class="text-3xl">🏅</div><h3 class="font-bold mt-2">Department Topper</h3><p class="text-sm text-slate-400">B.Tech IT, Anna University</p></div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade">
+ <h2 class="text-3xl font-bold mb-6">Get in <span class="grad">Touch</span></h2>
+ <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+  <div class="card md:col-span-2 flex flex-col gap-3 justify-center">
+   <p class="text-slate-400 text-sm">Hiring for a data analyst role? I’d love to hear from you.</p>
+   <a class="btn btn-p justify-center" href="mailto:priya2006ac@gmail.com">✉ priya2006ac@gmail.com</a>
+   <a class="btn btn-g justify-center" href="tel:+919655071690">📞 +91-9655071690</a>
+  </div>
+  <div class="card md:col-span-3">
+   <form id="cf" class="space-y-3">
+    <input id="n" placeholder="Your name" required aria-label="Your name">
+    <input id="e" type="email" placeholder="Your email" required aria-label="Your email">
+    <textarea id="m" rows="4" placeholder="Your message" required aria-label="Your message"></textarea>
+    <button class="btn btn-p" type="submit">Send message →</button>
+    <p id="ok" class="text-sm text-cyan-300 hidden">Opening your email app…</p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
+ <div class="flex justify-center gap-5 mb-3">
+  <a class="hover:text-cyan-400" target="_blank" rel="noopener" href="https://www.linkedin.com/in/priyadharshini-a-564400357/">LinkedIn</a>
+  <a class="hover:text-cyan-400" target="_blank" rel="noopener" href="https://github.com/priya2006ac-cloud">GitHub</a>
+  <a class="hover:text-cyan-400" href="mailto:priya2006ac@gmail.com">Email</a>
+ </div>
+ © 2026 A. Priyadharshini · Tiruchirappalli, India
+</footer>
+
+<script>
+const skills=[["Tableau",85],["Power BI",82],["SQL",80],["PostgreSQL",72],["Excel",85],["Python",60],["Flask",55],["Chart.js",70]];
+document.getElementById('skills').innerHTML=skills.map(s=>`<div><div class="flex justify-between text-sm mb-1"><span>${s[0]}</span><span class="text-slate-500">${s[1]}%</span></div><div class="bar"><i data-w="${s[1]}"></i></div></div>`).join('');
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');e.target.querySelectorAll('[data-w]').forEach(b=>b.style.width=b.dataset.w+'%');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+
+const months=['Jan','Feb','Mar','Apr','May','Jun'],sales=[42,47,45,53,58,63];
+const fm=['Jul','Aug','Sep'];
+const cs=getComputedStyle(document.documentElement);
+function fc(g){let v=sales[5],o=[];for(let i=0;i<3;i++){v=v*(1+g/100);o.push(+v.toFixed(1))}return o}
+let chart;
+try{
+ chart=new Chart(document.getElementById('salesChart'),{type:'line',
+  data:{labels:[...months,...fm],datasets:[
+   {label:'Sales (₹ lakh)',data:[...sales,null,null,null],borderColor:'#22d3ee',backgroundColor:'rgba(34,211,238,.15)',fill:true,tension:.4,pointRadius:3},
+   {label:'Forecast',data:[null,null,null,null,null,sales[5],...fc(8)],borderColor:'#818cf8',borderDash:[6,6],tension:.4,pointRadius:3}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{x:{ticks:{color:'#94a3b8'},grid:{color:'#1e293b'}},y:{ticks:{color:'#94a3b8'},grid:{color:'#1e293b'}}}}});
+}catch(e){}
+document.getElementById('g').addEventListener('input',e=>{
+ const g=+e.target.value;document.getElementById('gv').textContent=g+'%';
+ if(chart){chart.data.datasets[1].data=[null,null,null,null,null,sales[5],...fc(g)];chart.update()}
+});
+// animated KPIs
+function count(id,to,fmt,d=1400){const el=document.getElementById(id);let t0=null;(function s(t){t0=t0||t;const p=Math.min((t-t0)/d,1);el.textContent=fmt(to*p);if(p<1)requestAnimationFrame(s)})(performance.now())}
+count('k1',3.08,v=>'₹'+v.toFixed(2)+' Cr');count('k2',12480,v=>Math.round(v).toLocaleString('en-IN'));count('k3',18.6,v=>v.toFixed(1)+'%');
+
+document.getElementById('cf').addEventListener('submit',ev=>{
+ ev.preventDefault();
+ const n=document.getElementById('n').value,e=document.getElementById('e').value,m=document.getElementById('m').value;
+ document.getElementById('ok').classList.remove('hidden');
+ location.href='mailto:priya2006ac@gmail.com?subject='+encodeURIComponent('Portfolio enquiry from '+n)+'&body='+encodeURIComponent(m+'\n\nReply to: '+e);
+});
+</script>
+</body>
+</html>
